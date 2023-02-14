@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nita's Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="src/vara.min.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="nav">
+            <div class="menu">
+                <a href="#" class="menu__link menu__link--active">
+                    Home
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        x="0px" y="0px" viewBox="0 0 152.9 43.4" style="enable-background:new 0 0 152.9 43.4;"
+                        xml:space="preserve">
+                        <path
+                            d="M151.9,13.6c0,0,3.3-9.5-85-8.3c-97,1.3-58.3,29-58.3,29s9.7,8.1,69.7,8.1c68.3,0,69.3-23.1,69.3-23.1 s1.7-10.5-14.7-18.4" />
+                    </svg>
+                </a><br>
+                <a href="#" class="menu__link">
+                    About Me
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        x="0px" y="0px" viewBox="0 0 152.9 43.4" style="enable-background:new 0 0 152.9 43.4;"
+                        xml:space="preserve">
+                        <path
+                            d="M151.9,13.6c0,0,3.3-9.5-85-8.3c-97,1.3-58.3,29-58.3,29s9.7,8.1,69.7,8.1c68.3,0,69.3-23.1,69.3-23.1 s1.7-10.5-14.7-18.4" />
+                    </svg>
+                </a><br>
+                <a href="#" class="menu__link">
+                    Works
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        x="0px" y="0px" viewBox="0 0 152.9 43.4" style="enable-background:new 0 0 152.9 43.4;"
+                        xml:space="preserve">
+                        <path
+                            d="M151.9,13.6c0,0,3.3-9.5-85-8.3c-97,1.3-58.3,29-58.3,29s9.7,8.1,69.7,8.1c68.3,0,69.3-23.1,69.3-23.1 s1.7-10.5-14.7-18.4" />
+                    </svg>
+                </a><br>
+                <a href="#" class="menu__link">
+                    Contact
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        x="0px" y="0px" viewBox="0 0 152.9 43.4" style="enable-background:new 0 0 152.9 43.4;"
+                        xml:space="preserve">
+                        <path
+                            d="M151.9,13.6c0,0,3.3-9.5-85-8.3c-97,1.3-58.3,29-58.3,29s9.7,8.1,69.7,8.1c68.3,0,69.3-23.1,69.3-23.1 s1.7-10.5-14.7-18.4" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="content-wrapper">
+        <div class="top">
+        <div class="top-img-1">
+            <img src="img/top-1.png" alt=""></div>
+            <div id="container"></div>
+            <a href="" class="hidden"></a>
+            <div class="top-img-2">
+                <img src="img/top-1.png" alt=""></div>
+    </div>
+        <div class="about-me">
+
+        </div>
+    </div>
+</div>
+    <script>
+        var fontSize = 155;
+        if (window.screen.width < 700)
+            fontSize = 90;
+        else if (window.screen.width < 1100)
+            fontSize = 130;
+        var vara = new Vara(
+            "#container", "https://raw.githubusercontent.com/akzhy/Vara/master/fonts/Pacifico/PacificoSLO.json",
+            [
+                {
+                    text: "Nita",
+                    y: 250,
+                    x: -200,
+                    id: "no_erase",
+                    duration: 2000
+                },
+                {
+                    text:
+                        "Noviyanti",
+                    y: -130,
+                    x: 120,
+                    duration: 4000
+                },
+            ],
+            {
+                strokeWidth: 2,
+                color: "#3a3939",
+                fontSize: fontSize,
+                textAlign: "center"
+            }
+        );
+        vara.ready(function () {
+            var erase = true;
+            vara.animationEnd(function (i, o) {
+                if (i == "no_erase") erase = false;
+                if (erase) {
+                    o.container.style.transition = "opacity 1s 1s";
+                    o.container.style.opacity = 0;
+                }
+            });
+            vara.get("github").container.style.cursor = "pointer";
+            vara.get("github").container.onclick = function () {
+                document.querySelector("#link").click();
+            };
+        });
+
+    </script>
+</body>
+
+</html>
