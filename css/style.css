@@ -33,6 +33,7 @@ body {
 h1 {
     font-family: 'Photograph-Signature', sans-serif;
     font-size: 48px;
+    padding-left: 10px;
 }
 
 body {
@@ -50,6 +51,7 @@ body {
 
 .content-wrapper {
     width: 85%;
+    position: relative;
 }
 
 /* NAV BAR */
@@ -120,14 +122,14 @@ body {
 
 .top-img-1 img {
     position: absolute;
-    top: 25%;
+    top: 7%;
     transition: opacity 2s;
 }
 
 .top-img-2 img {
     position: absolute;
-    top: 40%;
-    right: 15%;
+    top: 12%;
+    right: -4%;
 }
 
 /* TITLE */
@@ -136,7 +138,7 @@ h1 {
     background-repeat: no-repeat;
     background-size: contain;
     color: #000;
-    margin: 60px 0px;
+    margin: 50px 0px 30px;
 }
 
 /* ABOUT ME */
@@ -164,4 +166,132 @@ h1 {
     background-image: url(../img/highlight.png);
     background-repeat: no-repeat;
     background-size: contain;
+    padding-left: 10px;
+}
+.works-container {
+    margin-left: 20px;
+}
+.sticker {
+    display: flex;
+    margin-left: 20px;
+}
+.sticker img {
+    margin: 15px 10px;
+}
+.year {
+    display: flex;
+    align-items: center;
+}
+.apps {
+    position: absolute;
+    right: 0;
+    margin-top: -40px;
+}
+.apps img {
+    max-width: 300px;
+    margin: 0;
+}
+/* DESIGNS */
+.designs {
+    margin-top: 30px;
+}
+.designs p{
+    margin-bottom: 15px;
+}
+.designs-1 {
+    margin: 0 auto;
+    width: 75%;
+}
+.horizontal-scrollable > .row {
+    overflow-x: auto;
+    white-space: nowrap;
+}
+  
+.horizontal-scrollable > .row > .col-xs-4 {
+    display: inline-block;
+    float: none;
+}
+.designs-2 {
+    margin: 0 auto;
+    width: 60%;
+}
+.designs-2 br {
+    display: block;
+    margin: 15px 0;
+    content: " ";
+ }
+ .website-designs {
+    position: relative;
+ }
+ .website-designs p {
+    background-image: url(../img/highlight-2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-left: 10px;
+    margin-top: 40px;
+}
+.click {
+    position: absolute;
+    right: 0;
+    top: 40px;
+}
+.click img {
+    max-width: 80px;
+}
+ /* SLIDER */
+ .swiper-container {
+    width: 80%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 15px;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .swiper-slide img {
+    max-width: 660px;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 40px;
+    margin-top: 15px;
+  }
+
+  /* target all bullets */
+  .swiper-pagination-bullet.swiper-pagination-bullet {
+    background-color: #7981cf;
+    opacity: 1;
+    height: 20px;
+    width: 20px;
+  }
+
+  .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: #322a7e;
+    opacity: 1;
+    height: 20px;
+    width: 20px;
+  }
+
+/* CONTACT */
+.contact-container {
+    margin: 0 auto;
+    width: 80%;
+}
+.email {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+.email p {
+    align-items: flex-end;
+    display: flex;
+    font-size: 50px;
+    margin-bottom: -10px;
+    margin-left: 20px;
 }

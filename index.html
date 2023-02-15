@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nita's Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     <script src="src/vara.min.js"></script>
+    
 </head>
 
 <body>
@@ -53,36 +55,120 @@
             </div>
         </div>
         <div class="content-wrapper">
-        <div class="top">
-        <div class="top-img-1">
-            <img src="img/top-1.png" alt=""></div>
-            <div id="container"></div>
-            <a href="" class="hidden"></a>
-            <div class="top-img-2">
-                <img src="img/top-1.png" alt=""></div>
-    </div>
-        <div class="about-me">
-            <h1>About me</h1>
-            <div class="about-me-container">
-                <img src="img/nita.png" alt="">
-                <p>Hi ! My name is Nita Noviyanti. <br>
-                    currently studying Japanese Literature at Binus University<br>
-                    I’m more on the creative side, so I can draw and design.<br>
-                    And i live in Jakarta.<br>
-                    Nice to meet u~:)</p>
+            <div class="top">
+                <div class="top-img-1">
+                    <img src="img/top-1.png" alt="">
+                </div>
+                <div id="container"></div>
+                <a href="" class="hidden"></a>
+                <div class="top-img-2">
+                    <img src="img/top-1.png" alt="">
+                </div>
             </div>
-        </div>
-        <div class="works">
-            <h1>Works</h1>
-            <div class="works-container">
-                <div class="illustrations">
-                    <p>Illustrations :</p>
-                    
+            <div class="about-me">
+                <h1>About me</h1>
+                <div class="about-me-container">
+                    <img src="img/nita.png" alt="">
+                    <p>Hi ! My name is Nita Noviyanti. <br>
+                        currently studying Japanese Literature at Binus University<br>
+                        I’m more on the creative side, so I can draw and design.<br>
+                        And i live in Jakarta.<br>
+                        Nice to meet u~:)</p>
+                </div>
+            </div>
+            <div class="works">
+                <h1>Works</h1>
+                <div class="works-container">
+                    <div class="illustrations">
+                        <p>Illustrations :</p>
+                        <div class="sticker">
+                            <img src="img/illust-1.png" alt="" style="max-height:150px;">
+                            <img src="img/illust-2.png" alt="" style="max-height:150px;">
+                            <div class="year">
+                                <img src="img/2019.png" alt="">
+                            </div>
+                            <div class="apps">
+                                <img src="img/apps.png" alt="">
+                            </div>
+                        </div>
+                        <div class="sticker">
+                            <img src="img/illust-3.png" alt="" style="max-height:150px;">
+                            <img src="img/illust-4.png" alt="" style="max-height:150px;">
+                            <img src="img/illust-5.png" alt="" style="max-height:150px;">
+                            <div class="year">
+                                <img src="img/2022.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="designs">
+                        <p>Designs :</p>
+                        <div class="designs-1">
+                            <div class="container horizontal-scrollable">
+                                <div class="row text-center">
+                                    <div class="col-xs-4"><img src="img/design-1.png" alt="" style="max-height:150px;"></div>
+                                    <div class="col-xs-4"><img src="img/design-2.png" alt="" style="max-height:150px;"></div>
+                                    <div class="col-xs-4"><img src="img/design-3.png" alt="" style="max-height:150px;"></div>
+                                    <div class="col-xs-4"><img src="img/design-4.png" alt="" style="max-height:150px;"></div>
+                                    <div class="col-xs-4"><img src="img/design-5.png" alt="" style="max-height:150px;"></div>
+                                    <div class="col-xs-4"><img src="img/design-6.png" alt="" style="max-height:150px;"></div>
+                                    <div class="col-xs-4"><img src="img/design-7.png" alt="" style="max-height:150px;"></div>
+                                    <div class="col-xs-4"><img src="img/design-8.png" alt="" style="max-height:150px;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="designs-2">
+                            <div class="container horizontal-scrollable">
+                                <div class="row text-center">
+                                    <div class="col-xs-4"><img src="img/banner-1.jpg" alt="" style="max-height:150px;"></div>
+                                    <div class="col-xs-4"><img src="img/banner-2.jpg" alt="" style="max-height:150px;"></div>
+                                    <div class="col-xs-4"><img src="img/banner-3.jpg" alt="" style="max-height:150px;"></div>
+                                    <div class="col-xs-4"><img src="img/banner-4.jpg" alt="" style="max-height:150px;"></div>
+                                    <div class="col-xs-4"><img src="img/banner-5.jpg" alt="" style="max-height:150px;"></div>
+                                    <div class="col-xs-4"><img src="img/banner-6.jpg" alt="" style="max-height:150px;"></div>
+                                    <div class="col-xs-4"><img src="img/banner-7.jpg" alt="" style="max-height:150px;"></div>
+                                    <div class="col-xs-4"><img src="img/banner-8.jpg" alt="" style="max-height:150px;"></div>
+                                    <div class="col-xs-4"><img src="img/banner-9.jpg" alt="" style="max-height:150px;"></div>
+                                    <div class="col-xs-4"><img src="img/banner-10.jpg" alt="" style="max-height:150px;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="website-designs">
+                        <p>Website Designs :</p>
+                        <div class="website-designs">
+                            <div class="click">
+                                <img src="img/click.png" alt="">
+                            </div>
+                            <div class="swiper-container swiper">
+                                <!-- Additional required wrapper -->
+                                <div class="swiper-wrapper">
+                                  <!-- Slides -->
+                                  <div class="swiper-slide"><a href="https://nitanovi.github.io/basic-coding/"><img src="img/web-1.png" alt=""></a></div>
+                                  <div class="swiper-slide"><a href="https://nitanovi.github.io/basic-coding/"><img src="img/web-2.png" alt=""></a></div>
+                                  <div class="swiper-slide"><a href="https://nitanovi.github.io/basic-coding/"><img src="img/web-3.png" alt=""></a></div>
+                                  <div class="swiper-slide"><a href="https://nitanovi.github.io/basic-coding/"><img src="img/web-4.png" alt=""></a></div>
+                                  <div class="swiper-slide"><img src="img/web-5.png" alt=""></div>
+                                </div>
+                                <!-- If we need pagination -->
+                                <div class="swiper-pagination swiper-pagination"></div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact">
+                <h1>Contact</h1>
+                <div class="contact-container">
+                    <p>e-mail me !</p>
+                    <div class="email">
+                        <img src="img/email.png" alt="" style="max-height:150px;">
+                        <p>nitanovi1012@gmail.com</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
     <script>
         var fontSize = 155;
         if (window.screen.width < 700)
@@ -94,7 +180,7 @@
             [
                 {
                     text: "Nita",
-                    y: 250,
+                    y: 200,
                     x: -200,
                     id: "no_erase",
                     duration: 2000
@@ -129,6 +215,20 @@
             };
         });
 
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+     <script>var swiper = new Swiper('.swiper', {
+        // Optional parameters
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+        },
+        autoplay: {
+          delay: 3000,
+        },
+      });
     </script>
 </body>
 
