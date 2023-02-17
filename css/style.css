@@ -55,15 +55,22 @@ body {
 }
 
 /* NAV BAR */
-.menu {
+#navbar {
     position: fixed;
     float: right;
     text-align: center;
     right: 0;
-    top: 15%;
+    margin-top: 150px;
     width: 15%;
 }
-
+.sticky {
+    position: fixed;
+    text-align: center;
+    right: 0;
+    top: 0;
+    margin-top: 0 !important;
+    width: 15%;
+  }
 .menu__link {
     display: inline-block;
     font-family: 'Ronald-Flick', sans-serif;
@@ -93,11 +100,14 @@ body {
     z-index: -1;
 }
 
-.menu__link--active svg {
+.active svg {
     stroke: #ff4c4c;
 }
 
-.menu__link--active svg,
+.menu__link:active svg {
+    stroke: #ff4c4c;
+}
+.active svg,
 .menu__link:hover svg {
     stroke-dashoffset: 0;
     opacity: 1;
