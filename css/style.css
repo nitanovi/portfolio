@@ -5,6 +5,7 @@ body {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 * {
@@ -74,7 +75,9 @@ body {
     line-height: 2;
     letter-spacing: 0.040em;
 }
-
+.menu a .aboutme {
+    stroke: #ff4c4c;
+}
 .menu__link svg {
     fill: none;
     stroke: #70aec9;
