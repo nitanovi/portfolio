@@ -45,7 +45,7 @@ body {
 .wrapper {
     background-image: url(../img/background.png);
     background-size: 100%;
-    height: 5000px;
+    height: 4500px;
     background-repeat: x bottom;
 }
 

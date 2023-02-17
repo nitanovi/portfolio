@@ -56,7 +56,8 @@
             </div>
         </div>
         <div class="content-wrapper">
-            <div class="top">
+            <section class="top">
+            <div>
                 <div class="top-img-1">
                     <img src="img/top-1.png" alt="">
                 </div>
@@ -66,7 +67,9 @@
                     <img src="img/top-1.png" alt="">
                 </div>
             </div>
-            <div id="about-me">
+        </section>
+        <section id="about-me">
+            <div>
                 <h1>About me</h1>
                 <div class="about-me-container" data-aos="fade-left"data-aos-easing="linear"
                 data-aos-duration="1500">
@@ -78,7 +81,9 @@
                         Nice to meet u~:)</p>
                 </div>
             </div>
-            <div id="works">
+        </section>
+        <section id="works">
+            <div>
                 <h1>Works</h1>
                 <div class="works-container" data-aos="fade-left"data-aos-easing="linear"
                 data-aos-duration="1500">
@@ -163,7 +168,9 @@
                     </div>
                 </div>
             </div>
-            <div id="contact">
+        </section>
+        <section id="contact">
+            <div>
                 <h1>Contact</h1>
                 <div class="contact-container" data-aos="fade-left"data-aos-easing="linear"
                 data-aos-duration="1500">
@@ -174,6 +181,7 @@
                     </div>
                 </div>
             </div>
+        </section>
         </div>
     </div>
     <script>
@@ -241,18 +249,6 @@
     <script>
         AOS.init();
       </script>
-    <script>
-        // Add active class to the current button (highlight it)
-        var header = document.getElementById("myDIV");
-        var btns = header.getElementsByClassName("btn");
-        for (var i = 0; i < btns.length; i++) {
-          btns[i].addEventListener("click", function() {
-          var current = document.getElementsByClassName("active");
-          current[0].className = current[0].className.replace(" active", "");
-          this.className += " active";
-          });
-        }
-        </script>
         <script>
             window.onscroll = function() {myFunction()};
             
@@ -267,6 +263,8 @@
               }
             }
             </script>
+            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+            <script src="js/script.js"></script>
 </body>
 
 </html>
